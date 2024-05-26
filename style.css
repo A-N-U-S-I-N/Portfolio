@@ -149,6 +149,7 @@ nav {
 }
 
 .dot {
+    transition: transform 3s ease;
     background-color: #f4e70b;
     height: 2vh;
     width:1vw;
@@ -156,6 +157,11 @@ nav {
     margin-bottom: 4vh;
     margin-left: 2%;
     display: inline-block;
+}
+
+.content:hover .two > .dot, .me:hover .two > .dot {
+    transform: rotate(360deg);
+    cursor: pointer;
 }
   
 .one {
@@ -343,7 +349,11 @@ a {
     text-decoration: underline;
     text-decoration-color: #f4e70b;
     text-decoration-thickness: 1vh;
-    
+    transition: transform 3s ease;
+}
+
+.deco:hover {
+    transform: scale(1.1);
 }
 
 .decor {
@@ -529,6 +539,7 @@ table tr:last-child td:last-child {
 }
 
 .common:hover {
+    transform: scale(1.05);
     cursor: pointer;
     background-color: #ffee00;
 }
