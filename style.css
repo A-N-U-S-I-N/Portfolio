@@ -109,6 +109,7 @@ nav {
 }
 
 .pic {
+    position: relative;
     background-color: #f4e70b;
     border-radius: 50%;
     height:400px;
@@ -116,6 +117,19 @@ nav {
     margin: 7% 0 10% 20%;
     overflow: hidden;
     padding-top:1vh ;
+    animation: homeima 2s ease infinite ;
+}
+
+@keyframes homeima {
+    0% {
+        top:0%
+    }
+    50% {
+        top:1%;
+    }
+    100% {
+        top:0%;
+    }
 }
 
 .content {
@@ -358,6 +372,8 @@ a {
 }
 
 .photo {
+    position: relative;
+    animation: homeima 2s ease infinite ;
     z-index: -1;
     background-color: #f4e70b; 
     padding-left:2vw;
@@ -514,6 +530,7 @@ table tr:last-child td:last-child {
 
 .common:hover {
     cursor: pointer;
+    background-color: #ffee00;
 }
 
 .main-ima {
